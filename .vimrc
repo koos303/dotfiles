@@ -37,8 +37,17 @@ set history=10000          " Keep a lot of stuff in history
 set backup                 " Make backups
 set backupdir=~/.vim/tmp/  " Keep backups in a central location
 set directory=~/.vim/swap/ " Keep swap files in a central location
-set undofile               " Keep undo history even after closing Vim
-set undodir=~/.vim/undo    " Where to store undo history
+
+" Persistent undo
+if version >= 703
+try
+   " E518: Unknown option: undodir=~/.vim_runtime/undodir
+   set undodir=~/.vim_runtime/undodir
+   " E518: Unknown option: undofile
+   set undofile
+catch
+endtry
+endif
 
 set cindent
 set expandtab
