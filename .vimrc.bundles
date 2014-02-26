@@ -1,0 +1,19 @@
+set nocompatible          " be iMproved
+
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-rails.git'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-cucumber'
+Bundle 'Syntastic'
+Bundle 'mileszs/ack.vim'
+Bundle 'vim-scripts/bufexplorer.zip'
+Bundle 'vim-scripts/netrw.vim'
+Bundle 'altercation/vim-colors-solarized'
+
+filetype on           " Enable filetype detection
