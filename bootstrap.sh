@@ -43,6 +43,9 @@ function doIt() {
   checkTmpAndSwapDirs
   installVundle
   installPathogen
+
+  echo "Update/Install plugins using vundle"
+  vim -u ~/.vimrc.bundles +BundleInstall! +BundleClean +qall
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
