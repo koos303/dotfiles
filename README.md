@@ -3,6 +3,14 @@ dotfiles
 
 This repository is currently a work in progress, so I'm adjusting this readme more frequently.
 
+I used a lot of other .dotfiles repositories for my inspiration:
+* https://github.com/cloverinteractive/dotfiles
+* https://github.com/jtaby/dotfiles
+* https://github.com/fdietz/dotfiles
+* https://github.com/iain/dotfiles
+* https://github.com/mathiasbynens/dotfiles
+* https://github.com/ryanb/dotfiles
+
 ## Installation
 
 ### Prerequisites
@@ -36,7 +44,11 @@ This repository is currently a work in progress, so I'm adjusting this readme mo
 
     curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
-### Ruby on Rails
+### Ruby on Rails development
 
     brew install qt4
     brew install imagemagick
+    
+### I <3 Programs
+* [Flux](http://justgetflux.com/)
+* [MenuMeters](http://www.ragingmenace.com/software/menumeters/)
