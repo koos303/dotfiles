@@ -67,6 +67,9 @@ set splitbelow splitright  " split placement
 set smartcase
 set incsearch
 
+" I hate balloons
+set noballooneval
+
 let ruby_no_expensive = 1 " Differentiate between do..end and class..end is slow
 let ruby_operators = 1    " Highlight Ruby operators
 let ruby_space_errors = 1 " Highlights trailing spaces
