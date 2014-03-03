@@ -52,3 +52,4 @@ I used a lot of other .dotfiles repositories for my inspiration:
 ### I <3 Programs
 * [Flux](http://justgetflux.com/)
 * [MenuMeters](http://www.ragingmenace.com/software/menumeters/)
+* [Caffeine](https://itunes.apple.com/nl/app/caffeine/id411246225)
