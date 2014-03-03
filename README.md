@@ -53,3 +53,4 @@ I used a lot of other .dotfiles repositories for my inspiration:
 * [Flux](http://justgetflux.com/)
 * [MenuMeters](http://www.ragingmenace.com/software/menumeters/)
 * [Caffeine](https://itunes.apple.com/nl/app/caffeine/id411246225)
+* [VLC](http://www.videolan.org/vlc/)
