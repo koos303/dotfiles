@@ -12,6 +12,7 @@ install vim --env-std --override-system-vim
 # Misc.
 install htop
 install mtr
+install ack
 
 # Remove outdated versions from the cellar
 cleanup
