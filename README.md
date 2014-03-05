@@ -1,7 +1,7 @@
 dotfiles
 ========
 
-This repository is currently a work in progress, so I'm adjusting this readme more frequently.
+This repository is currently a work in progress, so I'm adjusting this readme more frequently. I use a MacBook Air as my development machine, so you might find some things in here that don't work in a standard Linux environment.
 
 I used a lot of other .dotfiles repositories for my inspiration:
 * https://github.com/cloverinteractive/dotfiles
@@ -13,27 +13,22 @@ I used a lot of other .dotfiles repositories for my inspiration:
 
 ## Installation
 
-### Prerequisites
-
-* Git (Available via the command line tools from Xcode)
-* [iTerm2](http://www.iterm2.com/)
-* [Homebrew](http://mxcl.github.io/homebrew/)
-
-#### Installing Homebrew
-
-    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-    brew bundle ~/Brewfile
-    
-#### Bootstrappin'
+This will copy most of the .dotfiles to your home directory.
 
     ./bootstrap
     
 ### OSX install steps
 
-### Prerequisites
+#### Prerequisites
 
-* Install Xcode
+* Install Xcode with the latest developer tools
+* [iTerm2](http://www.iterm2.com/)
+* [Homebrew](http://mxcl.github.io/homebrew/)
 * [PowerLine Font](https://github.com/Lokaltog/powerline-fonts/)
+
+#### Installing Homebrew recipes
+
+    brew bundle ~/Brewfile
 
 #### Installing Macvim and Powerline
 
@@ -44,14 +39,17 @@ I used a lot of other .dotfiles repositories for my inspiration:
 
     curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
-### Ruby on Rails development
+### Ruby on Rails
+You may want to install these packages to do RoR development
 
     brew install qt4
     brew install imagemagick
     
-### I <3 Programs
+## I <3 these programs
+
 * [Flux](http://justgetflux.com/)
 * [MenuMeters](http://www.ragingmenace.com/software/menumeters/)
 * [Caffeine](https://itunes.apple.com/nl/app/caffeine/id411246225)
 * [VLC](http://www.videolan.org/vlc/)
 * [SequelPro](http://www.sequelpro.com/)
+* [Spotify](https://www.spotify.com)
