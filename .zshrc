@@ -7,9 +7,15 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# General aliases
+alias l='ls -FhAlo'
+alias less='less -R' # color codes in less
+alias grep='grep --colour=always'
+
+# Ruby aliases
+alias rdm='rake db:migrate db:test:prepare'
+alias c='bundle exec cucumber -r features'
+alias wip='c --profile wip'
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
