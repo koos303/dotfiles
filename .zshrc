@@ -51,13 +51,13 @@ alias wip='c --profile wip'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rails ruby)
+plugins=(git github rails ruby rake osx rvm capistrano brew vagrant vundle)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
@@ -67,8 +67,24 @@ else
   export EDITOR='mvim'
 fi
 
+# color codes in zsh (used mainly in prompt coloring)
+export reset=$'%{\e[0;00m%}'
+export gray=$'%{\e[0;90m%}'
+
+function ___rvm_prompt {
+  if [ -s ~/.rvm/bin/rvm-prompt ]; then
+    echo "$gray$(~/.rvm/bin/rvm-prompt)$reset"
+  fi
+}
+
+# Set prompt
+setopt prompt_subst
+RPROMPT='$(___rvm_prompt)'
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

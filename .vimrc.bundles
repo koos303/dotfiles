@@ -15,5 +15,8 @@ Bundle 'mileszs/ack.vim'
 Bundle 'vim-scripts/bufexplorer.zip'
 Bundle 'vim-scripts/netrw.vim'
 Bundle 'altercation/vim-colors-solarized'
+"Bundle 'wincent/Command-T'
+"Bundle 'vim-latex/vim-latex'
+Bundle 'plasticboy/vim-markdown'
 
 filetype on           " Enable filetype detection

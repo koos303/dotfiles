@@ -1,6 +1,6 @@
 execute pathogen#infect()
 
-set rtp+=$HOME/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim
+set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
 
 " Always show statusline
 set laststatus=2
@@ -8,12 +8,24 @@ set laststatus=2
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256
 
+let g:tex_flavor='latex'
+let g:Tex_TreatMacViewerAsUNIX = 1
+let g:Tex_ExecuteUNIXViewerInForeground = 1
+let g:Tex_ViewRule_ps = 'open -a Preview'
+let g:Tex_ViewRule_pdf = 'open -a Preview'
+let g:Tex_DefaultTargetFormat = 'pdf'
+
 if has("gui_macvim") && has("gui_running")
+  let g:solarized_contrast="high"    "default value is normal
+  let g:solarized_visibility="high"    "default value is normal
+  let g:solarized_diffmode="high"    "default value is normal
+  let g:solarized_hitrail=1    "default value is 0
+  syntax enable
   colorscheme solarized
   set background=dark
   set antialias                      " Pretty
   set guioptions=Ace                 " No menubar, toolbar or scrollbars, as minimal as possible
-  set guifont=Dejavu\ Sans\ Mono\ for\ Powerline:h17 " Get Dejavu Sans mono here: http://dejavu-fonts.org/
+  set guifont=Dejavu\ Sans\ Mono\ for\ Powerline:h19 " Get Dejavu Sans mono here: http://dejavu-fonts.org/
   set fuoptions=maxvert,maxhorz      " Fixes Full Screen on OSX
   " If you are on OSX Lion, and you hate Lion's native full screen, turn it off for macvim:
   "   defaults write org.vim.MacVim MMNativeFullScreen 0
@@ -67,9 +79,6 @@ set splitbelow splitright  " split placement
 set smartcase
 set incsearch
 
-" I hate balloons
-set noballooneval
-
 let ruby_no_expensive = 1 " Differentiate between do..end and class..end is slow
 let ruby_operators = 1    " Highlight Ruby operators
 let ruby_space_errors = 1 " Highlights trailing spaces
@@ -106,6 +115,8 @@ endif
 
 " Rename :W to :w
 command! W :w
+
+cabbrev Ex Explore
 
 " Buffer Explorer opens with Ctrl+B
 nnoremap <C-B> :BufExplorer<cr>
